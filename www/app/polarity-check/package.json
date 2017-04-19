@@ -1,0 +1,32 @@
+{
+  "name": "fh-wfm-polarity-check",
+  "version": "0.0.9",
+  "description": "An vehicle-inspection module for WFM",
+  "main": "lib/angular/polarity-check-ng.js",
+  "scripts": {
+    "build": "wfm-template-build -m 'wfm.polarity-check'",
+    "watch": "wfm-template-build -w -m 'wfm.polarity-check'"
+  },
+  "keywords": [
+    "wfm",
+    "workorder"
+  ],
+  "author": {
+    "name": "Brian Leathem"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.13.4",
+    "lodash": "4.7.0"
+  },
+  "devDependencies": {
+    "fh-wfm-mediator": "0.0.13",
+    "fh-wfm-template-build": "0.0.8"
+  },
+  "readme": "# FeedHenry WFM vehicle-inspection\n\nA vehicle-inspection module for FeedHenry WFM providing a set of directives. The following items of a car can be checked with this module :\n- Fuel\n- Tires\n- Lights\n\n#### Setup\nThis module is packaged in a CommonJS format, exporting the name of the Angular namespace.  The module can be included in an angular.js as follows:\n\n```javascript\nangular.module('app', [\n, require('fh-wfm-vehicule-inspection')\n...\n])\n```\n\n#### Integration\n\n##### Angular service\n\n#### Directives\n\n| Name | Attributes |\n| ---- | ----------- |\n| vehicle-inspection-form | |\n| vehicle-inspection | vehicle-inspection|\n",
+  "readmeFilename": "README.md",
+  "_id": "fh-wfm-polarity-check@0.0.9",
+  "_shasum": "d981238ec4e9e88fef6bfb4a20f8d4e0372f1b28",
+  "_resolved": "https://registry.npmjs.org/fh-wfm-vehicle-inspection/-/fh-wfm-vehicle-inspection-0.0.9.tgz",
+  "_from": "https://registry.npmjs.org/fh-wfm-vehicle-inspection/-/fh-wfm-vehicle-inspection-0.0.9.tgz"
+}

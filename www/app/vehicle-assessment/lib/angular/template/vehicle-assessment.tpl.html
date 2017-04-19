@@ -1,0 +1,24 @@
+  <md-subheader>Risk Assessment</md-subheader>
+
+  <md-list class="risk-assessment">
+
+    <md-list-item class="md-2-line" >
+      <md-icon md-font-set="material-icons" ng-if="riskAssessment.complete" class="success">check_circle</md-icon>
+      <md-icon md-font-set="material-icons" ng-if="! riskAssessment.complete" class="danger">cancel</md-icon>
+      <div class="md-list-item-text">
+        <h3 ng-if="riskAssessment.complete">Complete</h3>
+        <h3 ng-if="! riskAssessment.complete">Uncompleted</h3>
+        <p>Risk Assessment</p>
+      </div>
+    <md-divider></md-divider>
+    </md-list-item>
+
+    <md-list-item class="md-2-line with-image">
+      <md-icon md-font-set="material-icons">gesture</md-icon>
+      <div class="md-list-item-text">
+        <h3><signature value="riskAssessment.signature"></signature></h3>
+        <p>Risk Assessment signature</p>
+      </div>
+    </md-list-item>
+
+</md-list>

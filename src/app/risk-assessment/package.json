@@ -1,0 +1,33 @@
+{
+  "name": "risk-assessment",
+  "version": "0.0.10",
+  "description": "A risk assessment module for WFM",
+  "main": "lib/angular/risk-assessment-ng",
+  "scripts": {
+    "build": "wfm-template-build -m 'custom.risk-assessment'",
+    "watch": "wfm-template-build -w -m 'custom.risk-assessment'"
+  },
+  "keywords": [
+    "wfm",
+    "risk-assessment"
+  ],
+  "author": {
+    "name": "Brian Leathem"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.13.4",
+    "fh-wfm-signature": "0.0.11",
+    "lodash": "4.7.0"
+  },
+  "devDependencies": {
+    "fh-wfm-mediator": "0.0.13",
+    "fh-wfm-template-build": "0.0.8"
+  },
+  "readme": "# FeedHenry WFM risk-assessment\n\nA vehicle-inspection module for FeedHenry WFM providing a set of directives. The following items of a risk assessment can be collected this module :\n- Completed / uncompleted\n- Signature capture\n\n#### Setup\nThis module is packaged in a CommonJS format, exporting the name of the Angular namespace.  The module can be included in an angular.js as follows:\n\n```javascript\nangular.module('app', [\n, require('fh-wfm-risk-assessment')\n...\n])\n```\n\n#### Dependency\n\nThis module also needs the the [wfm-signature](https://github.com/feedhenry-staff/wfm-signature) to work properly :\n```javascript\nangular.module('app', [\n, require('fh-wfm-signature')\n...\n])\n```\n\n\n#### Integration\n\n##### Angular service\n\n#### Directives\n\n| Name | Attributes |\n| ---- | ----------- |\n| risk-assessment-form | |\n| risk-assessment | value |\n",
+  "readmeFilename": "README.md",
+  "_id": "fh-wfm-risk-assessment@0.0.10",
+  "_shasum": "c5325bf9c1ba0e8d89fd40351df254fbf08c986d",
+  "_resolved": "https://registry.npmjs.org/fh-wfm-risk-assessment/-/fh-wfm-risk-assessment-0.0.10.tgz",
+  "_from": "https://registry.npmjs.org/fh-wfm-risk-assessment/-/fh-wfm-risk-assessment-0.0.10.tgz"
+}

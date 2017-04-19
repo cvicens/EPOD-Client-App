@@ -1,0 +1,143 @@
+.epod-workflow {
+  margin-bottom: 128px; }
+
+.epod-workflow-actions {
+  background: #fff;
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 79; }
+
+div.heightpx {
+  min-height: 400px;
+}
+
+p.epod-generic-p-small {
+  margin: 0;
+  padding: 0;
+}
+
+.epod-generic-row{
+  padding: 0px;
+}
+
+.epod-generic-padding-row{
+  padding: 15px;
+}
+
+.epod-generic-padding-lo-row{
+  padding-left: 15px;
+  margin: 10;
+}
+
+.epod-generic-warn {
+  color: red;
+}
+
+//epod-generic-row
+.epod-generic-tight-row  epod-generic-row {
+  padding-top: -5px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: inherit;
+  margin: 0;
+}
+
+.epod-generic-portal {
+  dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  dd {
+   margin-left: 180px;
+ }
+}
+
+.tabs {
+    width: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.tabs li {
+	display: block;
+}
+
+.labels:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.tabs label {
+	display: inline-block;
+	float: left;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: normal;
+    background: #2c3e50;
+    cursor: pointer;
+}
+
+.tabs label:hover {
+    background: #3498db;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    padding: 15px;
+
+    border:1px solid #ccc;
+    border-top: 10px solid #08C;
+    background-color:#ffffff;
+}
+
+
+.tabs input[type=radio] {
+    display:none;
+}
+
+[id^=tab]:checked ~ div[id^=tab-content] {
+    display: block;
+}
+
+[id^=tab]:checked ~ [id^=label]  {
+    background: #08C;
+    color: white;
+}
+
+#relatedContent {
+	display: block;
+	clear: both;
+  	max-width: 800px;
+  	margin: 100px auto 0;
+}
+
+#relatedContent h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #FFF;
+}
+
+#relatedContent .item {
+  	max-width: 44%;
+  	padding: 3%;
+  	float: left;
+  	text-align: center;
+}
+
+#relatedContent .item a img {
+ 	max-width: 100%;
+}

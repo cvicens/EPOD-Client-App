@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget id="com.redhat.demo.wfm" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>FeedHenry WFM</name>
+  <description>
+        A demo of the RHMAP WFM modules.
+    </description>
+  <author email="bleathem@gmail.com" href="http://feedhenry.com">
+      Red Hat Mobile
+  </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-navigation href="*://*.mbaas2.tom.redhatmobile.com/*"/>
+  <preference name="webviewbounce" value="false"/>
+  <preference name="UIWebViewBounce" value="false"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="16"/>
+  <preference name="BackupWebStorage" value="none"/>
+  <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="3000"/>
+  <feature name="StatusBar">
+    <param name="ios-package" value="CDVStatusBar" onload="true"/>
+  </feature>
+  <platform name="ios">
+    <icon src="www/res/icons/ios/icon.png" width="57" height="57"/>
+    <icon src="www/res/icons/ios/icon@2x.png" width="114" height="114"/>
+    <icon src="www/res/icons/ios/icon-40.png" width="40" height="40"/>
+    <icon src="www/res/icons/ios/icon-40@2x.png" width="80" height="80"/>
+    <icon src="www/res/icons/ios/icon-50.png" width="50" height="50"/>
+    <icon src="www/res/icons/ios/icon-50@2x.png" width="100" height="100"/>
+    <icon src="www/res/icons/ios/icon-60.png" width="60" height="60"/>
+    <icon src="www/res/icons/ios/icon-60@2x.png" width="120" height="120"/>
+    <icon src="www/res/icons/ios/icon-60@3x.png" width="180" height="180"/>
+    <icon src="www/res/icons/ios/icon-72.png" width="72" height="72"/>
+    <icon src="www/res/icons/ios/icon-72@2x.png" width="144" height="144"/>
+    <icon src="www/res/icons/ios/icon-76.png" width="76" height="76"/>
+    <icon src="www/res/icons/ios/icon-76@2x.png" width="152" height="152"/>
+    <icon src="www/res/icons/ios/icon-small.png" width="29" height="29"/>
+    <icon src="www/res/icons/ios/icon-small@2x.png" width="58" height="58"/>
+    <icon src="www/res/icons/ios/icon-small@3x.png" width="87" height="87"/>
+    <splash src="www/res/splash/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
+    <splash src="www/res/splash/ios/Default-667h.png" width="750" height="1334"/>
+    <splash src="www/res/splash/ios/Default-736h.png" width="1242" height="2208"/>
+    <splash src="www/res/splash/ios/Default-Landscape-736h.png" width="2208" height="1242"/>
+    <splash src="www/res/splash/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536"/>
+    <splash src="www/res/splash/ios/Default-Landscape~ipad.png" width="1024" height="768"/>
+    <splash src="www/res/splash/ios/Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="www/res/splash/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
+    <splash src="www/res/splash/ios/Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="www/res/splash/ios/Default~iphone.png" width="320" height="480"/>
+  </platform>
+  <platform name="android">
+    <icon src="www/res/icons/android/drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="www/res/icons/android/drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="www/res/icons/android/drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="www/res/icons/android/drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="www/res/icons/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="www/res/icons/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="www/res/splash/android/drawable-land-ldpi-screen.png" density="land-ldpi"/>
+    <splash src="www/res/splash/android/drawable-land-mdpi-screen.png" density="land-mdpi"/>
+    <splash src="www/res/splash/android/drawable-land-hdpi-screen.png" density="land-hdpi"/>
+    <splash src="www/res/splash/android/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+    <splash src="www/res/splash/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+    <splash src="www/res/splash/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+    <splash src="www/res/splash/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="www/res/splash/android/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="www/res/splash/android/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="www/res/splash/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="www/res/splash/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="www/res/splash/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+  </platform>
+  <plugin name="cordova-plugin-device" spec="~0.2.8"/>
+  <plugin name="cordova-plugin-console" spec="~0.2.6"/>
+  <plugin name="cordova-plugin-whitelist" spec="~1.2.0"/>
+  <plugin name="com.feedhenry.plugins.splashscreen" spec="https://github.com/feedhenry/cordova-plugin-splashscreen.git#fh0.3.5"/>
+  <plugin name="cordova-plugin-network-information" spec="~0.2.9"/>
+  <plugin name="cordova-plugin-file" spec="~0.2.5"/>
+  <plugin name="cordova-plugin-geolocation" spec="~0.3.10"/>
+ <plugin name="cordova-plugin-file-transfer" spec="https://github.com/feedhenry/cordova-plugin-file-transfer.git#fh0.4.0"/>
+   <!-- <plugin name="cordova-plugin-inappbrowser" spec="~0.3.1"/>-->
+  <!-- <plugin name="cordova-plugin-camera" spec="~0.3.2"/> -->
+  <engine name="android" spec="~3.7.2"/>
+  <engine name="ios" spec="~3.5.0"/>
+  <icon src="www/res/icons/android/drawable-xhdpi-icon.png"/>
+</widget>

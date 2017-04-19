@@ -1,0 +1,29 @@
+{
+  "name": "epod-generic",
+  "version": "0.0.10",
+  "description": "A vehicle assessment module for WFM",
+  "main": "lib/angular/epod-generic-ng",
+  "scripts": {
+    "build": "wfm-template-build -m 'custom.epod-generic'",
+    "watch": "wfm-template-build -w -m 'custom.epod-generic'"
+  },
+  "keywords": [
+    "wfm",
+    "epod-generic"
+  ],
+  "author": {
+    "name": "Carlos Vicens"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.13.4",
+    "fh-wfm-signature": "0.0.11",
+    "lodash": "4.7.0"
+  },
+  "devDependencies": {
+    "fh-wfm-mediator": "0.0.13",
+    "fh-wfm-template-build": "0.0.8"
+  },
+  "readme": "# FeedHenry WFM epod-generic\n\nA module for FeedHenry WFM providing a set of directives. The following items of a vehicle assessment can be collected this module :\n- Completed / uncompleted\n- Signature capture\n\n#### Setup\nThis module is packaged in a CommonJS format, exporting the name of the Angular namespace.  The module can be included in an angular.js as follows:\n\n```javascript\nangular.module('app', [\n, require('fh-wfm-risk-assessment')\n...\n])\n```\n\n#### Dependency\n\nThis module also needs the the [wfm-signature](https://github.com/feedhenry-staff/wfm-signature) to work properly :\n```javascript\nangular.module('app', [\n, require('fh-wfm-signature')\n...\n])\n```\n\n\n#### Integration\n\n##### Angular service\n\n#### Directives\n\n| Name | Attributes |\n| ---- | ----------- |\n| risk-assessment-form | |\n| risk-assessment | value |\n",
+  "readmeFilename": "README.md"
+}
