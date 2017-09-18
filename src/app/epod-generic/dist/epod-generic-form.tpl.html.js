@@ -328,7 +328,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  </md-content>' +
 
     //'  <div layout="row" layout-align="center end">' +
-    '    <div class="workflow epod-workflow-actions md-padding" layout="row" layout-align="center end">\n' +
+    '    <div class="workflow-actions md-padding md-whiteframe-z4" layout="row" layout-align="center end">\n' +
     '     <md-button class="md-primary md-warn" ng-show="action === \'START DISCHARGE\' && !isAborted" ng-click="ctrl.showAbortConfirm($event)">ABORT</md-button>\n' +
     '     <md-button class="md-primary md-warn" ng-show="!isAborted" ng-disabled="isActionButtonDisabled || ! ctrl.dataIsValid()" ng-click="ctrl.onAction($event)">{{action}}</md-button>\n' +
     '    </div>' +
@@ -477,7 +477,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
 
     '\n' +
 
-    '    <div class="workflow epod-workflow-actions md-padding" layout="row" layout-align="center end">\n' +
+    '    <div class="workflow-actions md-padding md-whiteframe-z4" layout="row" layout-align="center end">\n' +
     '     <md-button class="md-primary md-warn" ng-disabled="isActionButtonDisabled" ng-click="ctrl.onAction($event, true)">ACCEPT</md-button>\n' +
     '    </div>' +
     '\n' +

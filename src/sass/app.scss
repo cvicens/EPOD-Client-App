@@ -38,6 +38,7 @@ $undefined: #DADADA; //grey
 @import 'src/app/polarity-check/lib/polarity-check.scss';
 @import 'src/app/vehicle-assessment/lib/vehicle-assessment.scss';
 @import 'src/app/epod-generic/lib/epod-generic.scss';
+@import 'src/app/questionnaire/lib/questionnaire.scss';
 
 
 .wfm-night{
@@ -118,7 +119,8 @@ $undefined: #DADADA; //grey
 .md-toolbar-tools h1 {
   font-size: inherit;
   font-weight: inherit;
-  margin: inherit; }
+  margin: inherit; 
+}
 
 
 .sidenav-header{
@@ -170,6 +172,17 @@ $undefined: #DADADA; //grey
   z-index: 100;
   background-color: rgba(0,0,0,0.5); /*dim the background*/
 }
+
+.wfm-mobile {
+  font-size: 5vw;
+}
+
+.md-list-item.md-2-line {
+  font-size: 5vw;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+
 
 // wfm-mobile-calendar
 .wfm-mobile-calendar md-datepicker{

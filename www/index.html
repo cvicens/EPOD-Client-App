@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+    
     <!--
     Needed when we will use cordova-plugin-whitelist
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://*.gstatic.com https://wfm.us.demos.redhatmobile.com https://*.mbaas2.tom.redhatmobile.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com; media-src *">
@@ -17,6 +19,22 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      
+      // Wait for device API libraries to load
+      //
+      function onLoad() {
+          document.addEventListener("deviceready", onDeviceReady, false);
+      }
+  
+      // device APIs are available
+      //
+      function onDeviceReady() {
+          // Now safe to use device APIs
+          console.log('Hiiiiiiiiii there!!!!!');
+      }
+  
+    </script>
 
     <!-- your app's js -->
     <script src="app/vendor.js"></script>
@@ -24,7 +42,7 @@
     <!--<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>-->
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyA_0R8cAax0R8gaU0WxnYdVVbzATLRBIA0"></script>
   </head>
-  <body layout="column" ng-app="wfm-mobile" class="wfm-mobile">
+  <body layout="column" ng-app="wfm-mobile" class="wfm-mobile" onload="onLoad()">
     <!--<div ng-if="!ready" flex layout="row" layout-align="center center" class="spinner-overlay">
       <md-progress-circular md-diameter="160" md-mode="indeterminate"></md-progress-circular>
     </div>-->

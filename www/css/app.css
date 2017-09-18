@@ -429,6 +429,52 @@ p.epod-generic-p-small {
 #relatedContent .item a img {
   max-width: 100%; }
 
+/*
+.vehicle-inspection-form {
+  md-radio-button {
+    display: inline;
+  }
+
+  .fuel {
+    md-radio-button {
+      margin: 5px;
+    }
+  }
+}
+
+*/
+img.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#ttr-questionnaire-image {
+  background: url(http://circuitglobe.com/wp-content/uploads/2015/09/polarity-test-of-transformer-compressor.jpg) no-repeat center center;
+  height: 200px;
+  width: 200px; }
+
+.questionnaire-row {
+  padding: 5px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  margin-left: 16px;
+  margin-right: 16px; }
+
+.wfm-inspection-row {
+  padding: 16px; }
+
+.vehicle-inspection-portal dt {
+  float: left;
+  width: 160px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.vehicle-inspection-portal dd {
+  margin-left: 180px; }
+
 .wfm-night:after {
   content: "";
   background: #F5EDDC;
@@ -518,6 +564,14 @@ p.epod-generic-p-small {
   width: 100%;
   height: 100%;
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*dim the background*/ }
+
+.wfm-mobile {
+  font-size: 5vw; }
+
+.md-list-item.md-2-line {
+  font-size: 5vw;
   background-color: rgba(0, 0, 0, 0.5);
   /*dim the background*/ }
 

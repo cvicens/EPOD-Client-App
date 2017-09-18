@@ -33,9 +33,12 @@ angular.module('wfm-mobile', [
 , require('./risk-assessment')
 , require('./polarity-check'),
 , require('./vehicle-assessment')
-, require('./epod-generic')
+, require('./epod-generic'),
+, require('./questionnaire')
 //, require('./fetch-ticket/fetch-ticket')
 ])
+
+.constant('$fh', require("fh-js-sdk"))
 
 .constant("Constants", {
         "COMPANY_NAME": "Aggregate Industries Ltd."

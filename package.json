@@ -28,6 +28,7 @@
     "body-parser": "1.15.0",
     "config-chain": "1.1.10",
     "express": "4.13.4",
+    "fh-js-sdk": "^2.21.0-alpha.1",
     "fh-wfm-appform": "0.0.16",
     "fh-wfm-camera": "0.0.6",
     "fh-wfm-file": "0.0.5",
